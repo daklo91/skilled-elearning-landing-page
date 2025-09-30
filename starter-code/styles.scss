@@ -1,0 +1,14 @@
+// styles.scss
+$main-color: #3498db;
+
+body {
+  font-family: Arial, sans-serif;
+  color: $main-color;
+}
+
+button {
+  background: $main-color;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
