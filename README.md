@@ -4,4 +4,5 @@ Another FrontendMentor challenge. This time with scss/sass.<br>
 install and put scss file on watch:<br>
 - make sure you have the latest node and npm<br>
 - run from root: npm i<br>
+- cd src<br>
 - run from root: npx sass --watch styles.scss:styles.css<br>
