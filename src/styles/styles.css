@@ -1,0 +1,56 @@
+.dark-button-link {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background-color: #13183f;
+  padding: 16px 32px;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+.dark-button-link:hover {
+  background-color: #666ca3;
+}
+
+body, p {
+  background-color: #ffffff;
+  margin: 0px;
+}
+
+header {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  height: 20px;
+}
+
+p {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+section h2 {
+  color: red;
+}
+section h2:hover {
+  color: blue;
+}
+
+.headline-1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  line-height: 120%;
+  font-size: 56px;
+  letter-spacing: 0px;
+}
+
+/*# sourceMappingURL=styles.css.map */

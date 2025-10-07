@@ -1,0 +1,56 @@
+// .plus-jakarta-sans-<uniquifier> {
+//   font-family: "Plus Jakarta Sans", sans-serif;
+//   font-optical-sizing: auto;
+//   font-weight: <weight>;
+//   font-style: normal;
+// }
+
+@use "_variables";
+@use "_buttons";
+// @mixin forceBackgroundColor($color) {
+//   background-color: $color !important;
+// }
+
+// husk å test ut mobile first
+body {
+  background-color: variables.$background-color;
+  margin: 0px;
+  // @include forceBackgroundColor(wheat);
+}
+
+header {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    height: 20px;
+  }
+}
+
+p {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  @extend body;
+}
+
+section {
+  h2 {
+    color: red;
+
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+.headline-1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  line-height: 120%;
+  font-size: 56px;
+  letter-spacing: 0px;
+}
