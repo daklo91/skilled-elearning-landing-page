@@ -23,17 +23,25 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 64px;
 
   img {
     height: 20px;
   }
 }
 
-p {
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  @extend body;
+.section-1 {
+  padding: 0 20px;
+
+  h1 {
+    margin-bottom: 24px;
+    @include variables.headline-1;
+  }
+
+  p {
+    margin-bottom: 40px;
+    @include variables.text-5;
+  }
 }
 
 section {
@@ -44,13 +52,4 @@ section {
       color: blue;
     }
   }
-}
-
-.headline-1 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  line-height: 120%;
-  font-size: 56px;
-  letter-spacing: 0px;
 }

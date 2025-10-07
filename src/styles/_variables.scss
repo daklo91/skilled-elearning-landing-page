@@ -9,17 +9,45 @@ $text-color: #83869a;
 $background-color: #ffffff;
 
 $gradient-color-primary: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
-$gradient-color-primary-muted: linear-gradient(
-  180deg,
-  #ff704888 0%,
-  #f02aa688 100%
-);
 $gradient-color-secondary: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
-$gradient-color-secondary-muted: linear-gradient(
-  180deg,
-  #4851ff88 0%,
-  #f02aa688 100%
-);
+
+// ? The gradients cannot be transitioned. So we use opacity 50% instead, with the background color to force the color to be like the design.
+// $gradient-color-primary-muted: linear-gradient(
+//   180deg,
+//   #ff704888 0%,
+//   #f02aa688 100%
+// );
+// $gradient-color-secondary-muted: linear-gradient(
+//   180deg,
+//   #4851ff88 0%,
+//   #f02aa688 100%
+// );
+
+$mobile-screen: 600px;
+
+@mixin headline-1 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  line-height: 120%;
+  font-size: 40px;
+  letter-spacing: 0px;
+  color: #13183f;
+
+  @media only screen and (min-width: $mobile-screen) {
+    font-size: 56px;
+  }
+}
+
+@mixin text-5 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  line-height: 150%;
+  font-size: 18px;
+  letter-spacing: 0px;
+  color: #83869a;
+}
 
 @mixin text-7 {
   font-family: "Plus Jakarta Sans", sans-serif;

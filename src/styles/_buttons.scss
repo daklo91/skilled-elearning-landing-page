@@ -8,8 +8,20 @@
   border-radius: 28px;
   cursor: pointer;
   transition: background-color 0.1s ease;
+  display: inline-block;
 
   &:hover {
     background-color: variables.$primary-color-muted;
+  }
+}
+
+.primary-button-link {
+  @extend .dark-button-link;
+  background-color: variables.$background-color;
+  background-image: variables.$gradient-color-primary;
+  transition: opacity 0.1s ease;
+
+  &:hover {
+    opacity: 50%;
   }
 }
