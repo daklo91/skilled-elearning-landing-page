@@ -25,33 +25,65 @@ $gradient-color-secondary: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
 
 $mobile-screen: 600px;
 
-@mixin headline-1 {
+@mixin textDefaults {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
+}
+
+@mixin text-1 {
+  @include textDefaults;
   font-weight: 800;
   line-height: 120%;
   font-size: 40px;
   letter-spacing: 0px;
-  color: #13183f;
 
   @media only screen and (min-width: $mobile-screen) {
     font-size: 56px;
   }
 }
 
+@mixin text-3 {
+  @include textDefaults;
+  font-weight: 800;
+  line-height: 120%;
+  font-size: 24px;
+  letter-spacing: 0px;
+
+  @media only screen and (min-width: $mobile-screen) {
+    font-size: 32px;
+  }
+}
+
+@mixin text-4 {
+  @include textDefaults;
+  font-weight: 800;
+  line-height: 120%;
+  font-size: 20px;
+  letter-spacing: 0px;
+
+  @media only screen and (min-width: $mobile-screen) {
+    font-size: 24px;
+  }
+}
+
 @mixin text-5 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
+  @include textDefaults;
   font-weight: 500;
   line-height: 150%;
   font-size: 18px;
   letter-spacing: 0px;
-  color: #83869a;
+}
+
+@mixin text-6 {
+  @include textDefaults;
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 16px;
+  letter-spacing: 0px;
 }
 
 @mixin text-7 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
+  @include textDefaults;
   font-weight: 700;
   line-height: 150%;
   font-size: 18px;

@@ -25,3 +25,15 @@
     opacity: 50%;
   }
 }
+
+@mixin blank-button-link {
+  @extend .dark-button-link;
+  background-color: variables.$background-color;
+  color: variables.$secondary-color;
+  transition: color 0.1s ease;
+
+  &:hover {
+    background-color: variables.$background-color;
+    color: variables.$secondary-color-muted;
+  }
+}

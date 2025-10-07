@@ -1,4 +1,4 @@
-.dark-button-link, .primary-button-link {
+.dark-button-link, .courses-section article a, .primary-button-link {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -13,7 +13,7 @@
   transition: background-color 0.1s ease;
   display: inline-block;
 }
-.dark-button-link:hover, .primary-button-link:hover {
+.dark-button-link:hover, .courses-section article a:hover, .primary-button-link:hover {
   background-color: #666ca3;
 }
 
@@ -42,10 +42,8 @@ header img {
   height: 20px;
 }
 
-.section-1 {
+.hero-section h1 {
   padding: 0 20px;
-}
-.section-1 h1 {
   margin-bottom: 24px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -53,14 +51,17 @@ header img {
   line-height: 120%;
   font-size: 40px;
   letter-spacing: 0px;
-  color: #13183f;
 }
 @media only screen and (min-width: 600px) {
-  .section-1 h1 {
+  .hero-section h1 {
     font-size: 56px;
   }
 }
-.section-1 p {
+.hero-section h1 {
+  color: #13183f;
+}
+.hero-section p {
+  padding: 0 20px;
   margin-bottom: 40px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -70,12 +71,90 @@ header img {
   letter-spacing: 0px;
   color: #83869a;
 }
-
-section h2 {
-  color: red;
+.hero-section a {
+  margin: 0 20px;
 }
-section h2:hover {
-  color: blue;
+.hero-section img {
+  margin-top: 70px;
+  display: block;
+  width: 100%;
+  transform: scale(1.2);
+}
+
+.courses-section h2 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  line-height: 120%;
+  font-size: 24px;
+  letter-spacing: 0px;
+}
+@media only screen and (min-width: 600px) {
+  .courses-section h2 {
+    font-size: 32px;
+  }
+}
+.courses-section h2 {
+  color: #ffffff;
+  padding: 32px;
+  border-radius: 15px;
+  margin: 0px 20px;
+  background-image: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+}
+.courses-section ul,
+.courses-section li {
+  all: unset;
+}
+.courses-section article {
+  margin: 60px 20px;
+  padding-top: 64px;
+  border-radius: 15px;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.0442);
+  position: relative;
+}
+.courses-section article img {
+  position: absolute;
+  top: -28px;
+  left: 32px;
+}
+.courses-section article h3 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  line-height: 120%;
+  font-size: 20px;
+  letter-spacing: 0px;
+}
+@media only screen and (min-width: 600px) {
+  .courses-section article h3 {
+    font-size: 24px;
+  }
+}
+.courses-section article h3 {
+  color: #13183f;
+  margin: 0px 32px 24px;
+}
+.courses-section article p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  line-height: 150%;
+  font-size: 16px;
+  letter-spacing: 0px;
+  color: #83869a;
+  margin: 0 32px 8px;
+}
+.courses-section article a {
+  background-color: #ffffff;
+  color: #f74780;
+  transition: color 0.1s ease;
+}
+.courses-section article a:hover {
+  background-color: #ffffff;
+  color: #ffa7c3;
+}
+.courses-section article a {
+  margin-bottom: 24px;
 }
 
 /*# sourceMappingURL=styles.css.map */
