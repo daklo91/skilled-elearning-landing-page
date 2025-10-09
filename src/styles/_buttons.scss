@@ -9,6 +9,7 @@
   cursor: pointer;
   transition: background-color 0.1s ease;
   display: inline-block;
+  text-decoration: none;
 
   &:hover {
     background-color: variables.$primary-color-muted;
@@ -16,13 +17,33 @@
 }
 
 .primary-button-link {
-  @extend .dark-button-link;
   background-color: variables.$background-color;
-  background-image: variables.$gradient-color-primary;
-  transition: opacity 0.1s ease;
+  border-radius: 28px;
 
-  &:hover {
-    opacity: 50%;
+  a {
+    @extend .dark-button-link;
+    background-color: variables.$background-color;
+    background-image: variables.$gradient-color-primary;
+    transition: opacity 0.1s ease;
+
+    &:hover {
+      opacity: 50%;
+    }
+  }
+}
+
+.secondary-button-link {
+  background-color: variables.$background-color;
+  border-radius: 28px;
+
+  a {
+    @extend .dark-button-link;
+    background-color: variables.$background-color;
+    background-image: variables.$gradient-color-secondary;
+    transition: opacity 0.1s ease;
+    &:hover {
+      opacity: 50%;
+    }
   }
 }
 

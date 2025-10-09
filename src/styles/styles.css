@@ -1,4 +1,4 @@
-.dark-button-link, .courses-section article a, .primary-button-link {
+.dark-button-link, .courses-section article a, .secondary-button-link a, .primary-button-link a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -12,17 +12,35 @@
   cursor: pointer;
   transition: background-color 0.1s ease;
   display: inline-block;
+  text-decoration: none;
 }
-.dark-button-link:hover, .courses-section article a:hover, .primary-button-link:hover {
+.dark-button-link:hover, .courses-section article a:hover, .secondary-button-link a:hover, .primary-button-link a:hover {
   background-color: #666ca3;
 }
 
 .primary-button-link {
   background-color: #ffffff;
+  border-radius: 28px;
+}
+.primary-button-link a {
+  background-color: #ffffff;
   background-image: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
   transition: opacity 0.1s ease;
 }
-.primary-button-link:hover {
+.primary-button-link a:hover {
+  opacity: 50%;
+}
+
+.secondary-button-link, footer .secondary-button-link {
+  background-color: #ffffff;
+  border-radius: 28px;
+}
+.secondary-button-link a {
+  background-color: #ffffff;
+  background-image: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  transition: opacity 0.1s ease;
+}
+.secondary-button-link a:hover {
   opacity: 50%;
 }
 
@@ -31,14 +49,22 @@ body {
   margin: 0px;
 }
 
-header {
+.logo {
+  all: unset;
+  cursor: pointer;
+}
+.logo img {
+  display: block;
+}
+
+header, footer {
   padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 64px;
 }
-header img {
+header img, footer img {
   height: 20px;
 }
 
@@ -155,6 +181,13 @@ header img {
 }
 .courses-section article a {
   margin-bottom: 24px;
+}
+
+footer {
+  background-color: #13183f;
+  margin-bottom: 0;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 /*# sourceMappingURL=styles.css.map */
