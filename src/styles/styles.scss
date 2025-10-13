@@ -1,21 +1,9 @@
-// .plus-jakarta-sans-<uniquifier> {
-//   font-family: "Plus Jakarta Sans", sans-serif;
-//   font-optical-sizing: auto;
-//   font-weight: <weight>;
-//   font-style: normal;
-// }
-
 @use "_variables";
 @use "_buttons";
-// @mixin forceBackgroundColor($color) {
-//   background-color: $color !important;
-// }
 
-// husk å test ut mobile first
 body {
   background-color: variables.$background-color;
   margin: 0px;
-  // @include forceBackgroundColor(wheat);
 }
 
 .logo {
@@ -67,6 +55,10 @@ header {
 }
 
 .courses-section {
+  background-image: variables.$background-color-linear;
+
+  padding-bottom: 60px;
+
   h2 {
     @include variables.text-3;
     color: variables.$background-color;
@@ -87,6 +79,11 @@ header {
     border-radius: 15px;
     box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 4.42%);
     position: relative;
+    background-color: variables.$background-color;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     img {
       position: absolute;

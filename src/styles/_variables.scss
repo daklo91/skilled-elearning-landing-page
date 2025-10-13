@@ -7,21 +7,10 @@ $secondary-color-muted: #ffa7c3;
 $text-color: #83869a;
 
 $background-color: #ffffff;
+$background-color-linear: linear-gradient(#ffffff 0%, #f0f1ff 100%);
 
-$gradient-color-primary: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
-$gradient-color-secondary: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
-
-// ? The gradients cannot be transitioned. So we use opacity 50% instead, with the background color to force the color to be like the design.
-// $gradient-color-primary-muted: linear-gradient(
-//   180deg,
-//   #ff704888 0%,
-//   #f02aa688 100%
-// );
-// $gradient-color-secondary-muted: linear-gradient(
-//   180deg,
-//   #4851ff88 0%,
-//   #f02aa688 100%
-// );
+$gradient-color-primary: linear-gradient(#ff6f48 0%, #f02aa6 100%);
+$gradient-color-secondary: linear-gradient(#4851ff 0%, #f02aa6 100%);
 
 $mobile-screen: 600px;
 
