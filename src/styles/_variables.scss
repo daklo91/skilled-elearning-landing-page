@@ -42,7 +42,7 @@ $column-gap: 24px;
   font-size: 24px;
   letter-spacing: 0px;
 
-  @media only screen and (min-width: $mobile-screen) {
+  @media only screen and (min-width: $desktop-screen) {
     font-size: 32px;
   }
 }
