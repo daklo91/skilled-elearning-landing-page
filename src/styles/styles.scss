@@ -25,25 +25,39 @@ header {
   img {
     height: 20px;
   }
+
+  @media only screen and (min-width: variables.$tablet-screen) {
+    padding: 24px 44px;
+  }
 }
 
 .hero-section {
+  padding: 0 20px;
+  @media only screen and (min-width: variables.$tablet-screen) {
+    display: flex;
+    column-gap: variables.$column-gap;
+    padding: 0 40px 128px;
+    > div {
+      width: 50%;
+    }
+  }
+
   h1 {
-    padding: 0 20px;
     margin-bottom: 24px;
     @include variables.text-1;
     color: variables.$primary-color;
   }
 
   p {
-    padding: 0 20px;
     margin-bottom: 40px;
     @include variables.text-5;
     color: variables.$text-color;
   }
 
-  a {
-    margin: 0 20px;
+  @media only screen and (min-width: variables.$tablet-screen) {
+    picture {
+      width: 50%;
+    }
   }
 
   img {
@@ -51,12 +65,19 @@ header {
     display: block;
     width: 100%;
     transform: scale(1.2);
+    position: relative;
+    z-index: -1000;
+
+    @media only screen and (min-width: variables.$tablet-screen) {
+      margin-top: 0;
+      margin-bottom: 64px;
+      transform: scale(1.9) translate(70px, -20px);
+    }
   }
 }
 
 .courses-section {
   background-image: variables.$background-color-linear;
-
   padding-bottom: 60px;
 
   h2 {

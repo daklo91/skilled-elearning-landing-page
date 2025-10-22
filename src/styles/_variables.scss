@@ -13,6 +13,10 @@ $gradient-color-primary: linear-gradient(#ff6f48 0%, #f02aa6 100%);
 $gradient-color-secondary: linear-gradient(#4851ff 0%, #f02aa6 100%);
 
 $mobile-screen: 600px;
+$tablet-screen: 768px;
+$desktop-screen: 1440px;
+
+$column-gap: 24px;
 
 @mixin textDefaults {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -26,7 +30,7 @@ $mobile-screen: 600px;
   font-size: 40px;
   letter-spacing: 0px;
 
-  @media only screen and (min-width: $mobile-screen) {
+  @media only screen and (min-width: $desktop-screen) {
     font-size: 56px;
   }
 }

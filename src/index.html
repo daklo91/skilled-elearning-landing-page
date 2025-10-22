@@ -29,23 +29,35 @@
     </header>
     <main>
       <section class="hero-section">
-        <h1>Maximize skill, minimize budget</h1>
+        <div>
+          <h1>Maximize skill, minimize budget</h1>
 
-        <p>
-          Our modern courses across a range of in-demand skills will give you
-          the knowledge you need to live the life you want.
-        </p>
+          <p>
+            Our modern courses across a range of in-demand skills will give you
+            the knowledge you need to live the life you want.
+          </p>
 
-        <div class="primary-button-link">
-          <a href="#">Get Started</a>
+          <div class="primary-button-link">
+            <a href="#">Get Started</a>
+          </div>
         </div>
 
-        <!-- legg til picture element her -->
-        <!-- bilde strekker skjermen på mobil -->
-        <img
-          src="./assets/image-hero-mobile@2x.webp"
-          alt="Members: 29000. Course hours: 1451"
-        />
+        <picture>
+          <source
+            class="tablet-image-source"
+            srcset="./assets/image-hero-tablet.webp"
+            media="(width >= 768px)"
+          />
+          <source
+            class="tablet-image-source"
+            srcset="./assets/image-hero-tablet.webp"
+            media="(width >= 768px)"
+          />
+          <img
+            src="./assets/image-hero-mobile@2x.webp"
+            alt="Members: 29000. Course hours: 1451"
+          />
+        </picture>
       </section>
 
       <section class="courses-section">

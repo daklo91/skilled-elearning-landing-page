@@ -14,6 +14,11 @@
   display: inline-block;
   text-decoration: none;
 }
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+  .dark-button-link, .courses-section article a, .secondary-button-link a, .primary-button-link a {
+    padding: 10.5px 24px;
+  }
+}
 .dark-button-link:hover, .courses-section article a:hover, .secondary-button-link a:hover, .primary-button-link a:hover {
   background-color: #666ca3;
 }
@@ -67,9 +72,26 @@ header, footer {
 header img, footer img {
   height: 20px;
 }
+@media only screen and (min-width: 768px) {
+  header, footer {
+    padding: 24px 44px;
+  }
+}
 
-.hero-section h1 {
+.hero-section {
   padding: 0 20px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    display: flex;
+    column-gap: 24px;
+    padding: 0 40px 128px;
+  }
+  .hero-section > div {
+    width: 50%;
+  }
+}
+.hero-section h1 {
   margin-bottom: 24px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -78,7 +100,7 @@ header img, footer img {
   font-size: 40px;
   letter-spacing: 0px;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 1440px) {
   .hero-section h1 {
     font-size: 56px;
   }
@@ -87,7 +109,6 @@ header img, footer img {
   color: #13183f;
 }
 .hero-section p {
-  padding: 0 20px;
   margin-bottom: 40px;
   font-family: "Plus Jakarta Sans", sans-serif;
   font-optical-sizing: auto;
@@ -97,14 +118,25 @@ header img, footer img {
   letter-spacing: 0px;
   color: #83869a;
 }
-.hero-section a {
-  margin: 0 20px;
+@media only screen and (min-width: 768px) {
+  .hero-section picture {
+    width: 50%;
+  }
 }
 .hero-section img {
   margin-top: 70px;
   display: block;
   width: 100%;
   transform: scale(1.2);
+  position: relative;
+  z-index: -1000;
+}
+@media only screen and (min-width: 768px) {
+  .hero-section img {
+    margin-top: 0;
+    margin-bottom: 64px;
+    transform: scale(1.9) translate(70px, -20px);
+  }
 }
 
 .courses-section {
