@@ -85,7 +85,7 @@ header img, footer img {
   .hero-section {
     display: flex;
     column-gap: 24px;
-    padding: 0 40px 128px;
+    padding: 0 44px 128px;
   }
   .hero-section > div {
     width: 50%;

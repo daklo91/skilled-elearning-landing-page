@@ -36,7 +36,7 @@ header {
   @media only screen and (min-width: variables.$tablet-screen) {
     display: flex;
     column-gap: variables.$column-gap;
-    padding: 0 40px 128px;
+    padding: 0 44px 128px;
     > div {
       width: 50%;
     }
