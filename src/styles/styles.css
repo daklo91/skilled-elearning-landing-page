@@ -77,6 +77,14 @@ header img, footer img {
     padding: 24px 44px;
   }
 }
+@media only screen and (min-width: 1440px) {
+  header, footer {
+    padding: 24px 160px;
+  }
+  header img, footer img {
+    height: 28px;
+  }
+}
 
 .hero-section {
   padding: 0 20px;
@@ -84,11 +92,21 @@ header img, footer img {
 @media only screen and (min-width: 768px) {
   .hero-section {
     display: flex;
+    align-items: center;
     column-gap: 24px;
     padding: 0 44px 128px;
   }
   .hero-section > div {
     width: 50%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-section {
+    padding: 0 160px 128px;
+  }
+  .hero-section h1,
+  .hero-section p {
+    max-width: 457px;
   }
 }
 .hero-section h1 {
@@ -136,6 +154,11 @@ header img, footer img {
     margin-top: 0;
     margin-bottom: 64px;
     transform: scale(1.9) translate(70px, -20px);
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .hero-section img {
+    transform: scale(1.9) translate(110px, -20px);
   }
 }
 
