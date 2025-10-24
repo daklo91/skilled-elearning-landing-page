@@ -15,28 +15,15 @@ body {
   }
 }
 
-header {
-  padding: 16px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 64px;
+main {
+  overflow-x: clip;
+}
 
-  img {
-    height: 20px;
-  }
-
-  @media only screen and (min-width: variables.$tablet-screen) {
-    padding: 24px 44px;
-  }
-
-  @media only screen and (min-width: variables.$desktop-screen) {
-    padding: 24px 160px;
-
-    img {
-      height: 28px;
-    }
-  }
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .hero-section {
@@ -99,8 +86,11 @@ header {
   }
 }
 
-.courses-section {
+.courses-section-background {
   background-image: variables.$background-color-linear;
+}
+
+.courses-section {
   padding-bottom: 60px;
 
   h2 {
@@ -162,13 +152,47 @@ header {
     row-gap: 32px;
     padding: 0 44px 144px;
 
-    ul {
+    ul,
+    li {
       display: contents;
     }
 
     h2,
     article {
       margin: 24px 0 0 0;
+      justify-items: stretch;
+    }
+  }
+
+  @media (min-width: variables.$desktop-screen) {
+    padding: 0 160px 144px;
+  }
+}
+
+header {
+  width: 100%;
+
+  > div {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+
+    img {
+      height: 20px;
+    }
+
+    @media only screen and (min-width: variables.$tablet-screen) {
+      padding: 24px 44px;
+    }
+
+    @media only screen and (min-width: variables.$desktop-screen) {
+      padding: 24px 160px;
+
+      img {
+        height: 28px;
+      }
     }
   }
 }
@@ -176,11 +200,14 @@ header {
 footer {
   @extend header;
   background-color: variables.$primary-color;
-  margin-bottom: 0;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
-  .secondary-button-link {
-    @extend .secondary-button-link;
+  > div {
+    margin-bottom: 0;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .secondary-button-link {
+      @extend .secondary-button-link;
+    }
   }
 }
