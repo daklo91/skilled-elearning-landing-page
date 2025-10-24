@@ -257,6 +257,9 @@ main {
 }
 @media (min-width: 1440px) {
   .courses-section {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 56px;
     padding: 0 160px 144px;
   }
 }
