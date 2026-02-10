@@ -9,3 +9,8 @@ install and put scss file on watch:<br>
 <br>
 Note:<br>
 If you are going to change the media breakpoints in the SCSS, make sure that they play well with the hardcoded breakpoints in the HTML picture element's sources.
+
+<br>
+<br>
+<br>
+Live site: https://daklo-skilled-elearning-landingpage.netlify.app/
